@@ -1,0 +1,417 @@
+*{margin: 0px;
+    padding: 0px;
+   
+}
+
+body{background-color: darkgrey;
+        }
+
+li{ display: inline;
+}
+
+header{display: flex; 
+    justify-content: flex-end;
+    height: 1 rem;
+ 
+    align-items: center;
+    background-color: rgb(150, 119, 135);
+    border-radius: 10px;
+}
+
+.header__logo{display: inline;}
+
+.header__titulo{display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(139, 115, 128)
+
+}
+
+.header__navegacion{
+    padding: 0.3 rem; border-radius: 10px;
+    flex-grow: 1;
+        }
+
+.header__referencias{ display: flex;
+    flex-wrap: wrap; justify-content: flex-end;
+}
+
+li{ font-family: 'Oswald', sans-serif;
+    padding: 20px;
+}
+
+a{ text-decoration: none;
+    color: black;
+}
+
+.portada{margin: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.portada__mapa{margin: 10px;
+    width: 25vw;
+    height: 25vh;
+    border-radius: 10px; 
+}
+
+.portada__horarios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(126, 121, 182);
+    width: 40vw;
+    font-family: 'Oswald', sans-serif; 
+    border-radius:  1rem;
+    text-align: center;
+}
+.portada__telefono{
+    border-radius: 10px;
+    width: 3vw;
+    height: 4vh;
+    }
+
+.titulo__destacado{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.herramientas{ 
+    display: flex;
+    font-family:'Oswald', sans-serif;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.herramientas__productos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: rgb(231, 235, 238)  ;
+    margin: 1rem;
+    padding: 1.7rem;
+    width: 15vw;
+    height: 80vh;
+    border: 4px ridge black;
+    border-radius: 1rem;
+}
+
+.herramientas__productos--destacado{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: rgb(231, 235, 238);
+    margin: 1rem;
+    padding: 1.7rem;
+    width: 15vw;
+    height:80vh;
+    border: 4px ridge black;
+    border-radius: 1rem;
+}
+.img__venta{
+    width: 15vw;
+    
+}
+
+.boton{
+    display: flex;
+    flex-direction: column;
+    color: rgb(27, 23, 23);
+    background-color: rgb(190, 162, 216);    
+    border-radius: 1rem;
+    width: 18vw;
+    border-bottom: 5rem;
+    
+}
+
+.ayuda{display: flex;
+    margin:1rem;
+    background-color: rgb(126, 121, 182);
+    flex-direction: column;
+    border-radius: 1rem;
+}
+
+.ayuda__descripcion{ 
+    text-align: center;
+    background-color: rgb(126, 121, 182);
+    font-family: ´Oswald´, sans-serif;
+    border-radius: 1rem;
+    }
+
+.ayuda__video{ display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction:row;
+    margin:1rem;    
+    padding: 1rem;
+    border-right: 2rem;
+    border-radius: 1rem; 
+    width: 25vw;
+    height: 50vh;
+ }
+
+.footer__disclaimer{
+    text-align: center;
+    font-family:'Oswald', sans-serif ;
+}
+
+.footer__redes{
+    font-family: 'Oswald', sans-serif ;
+    text-align: center;
+}
+
+.footer__logos{
+    text-align: right;
+}
+
+.imagenFondo{
+    background-image: url(../recursos/proyecto-fierro.jpg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+}
+.main__titulo{text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    margin-bottom: 10px;
+    color: rgb(197, 243, 243);
+
+}
+.formulario{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    text-align: center;   
+    background-color: rgb(0,0,0,0.2);
+    margin:auto;
+    padding: 1rem;
+    width:22rem;
+    border-radius: 20px;
+      
+}
+
+  
+.main__formularioNombre{
+    width: 23rem;
+    margin: 1rem;
+    height: 5vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aquamarine;
+    border: none;
+    text-align: center;
+}
+
+.main__formularioMail{
+    width: 23rem;
+    margin: 1rem;
+    height:5vh;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aquamarine ;
+    text-align: center;
+}
+
+.main__formularioTelefono{
+    width: 23rem;
+    margin: 1rem;
+    height: 5vh;
+    border:none;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+.main__formularioComentario{
+    width:24rem;
+    background-color: aquamarine;
+    text-align: center;
+    border:none;
+    margin:1rem;
+    min-height: 100px;  
+    max-height: 200px;
+    max-width: 23rem;    
+}
+
+label{
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main__formularioNewsletter{
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+   
+}
+
+.main__boton{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.main__enviar{
+    width: 24rem;
+    font-size: medium;
+    background-color: rgb(217, 238, 247);
+    margin: 10px;
+}
+
+.main__limpiar{
+    width: 24rem;
+    font-size: medium;
+    background-color: rgb(217, 238, 247);
+    margin: 10px
+}
+
+.titulo__producto{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+.producto{display: flex;
+    flex-wrap: wrap;  
+    flex-direction: row;  
+    justify-content:space-between;
+    margin: 20px;
+    height: 500px
+    
+}
+
+.producto__antideslizantes{
+    border-radius: 10px;
+}
+
+.producto__chapalisa{
+    border-radius: 10px;
+}
+
+.producto__conduccion{
+    border-radius: 10px;
+}
+
+.producto__hierrosymallas{
+    border-radius: 10px;
+}
+
+.producto__chapas{
+    border-radius: 10px;
+}
+
+.producto__estructurales{
+    border-radius: 10px;
+}
+
+.producto__metaldesplegado{
+    border-radius: 10px;
+}
+
+.producto__hierrosyperfiles{
+    border-radius: 10px;
+}
+
+.producto__herramientas{
+    border-radius: 10px;
+}
+
+.envios{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;}
+
+.grid__historia{
+    display: grid;   
+    border: 5px solid yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 1 rem;  
+    padding: 2rem;
+    font-size:1rem;
+    margin: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "imagen textouno textodos"
+    "textotres textotres textotres"
+    "imagendos imagentres imagencuatro";
+    text-align:center;    
+}
+
+.img__ferreteria{
+    grid-area: imagen;
+}
+
+.grid__historiauno{
+    grid-area: textouno;
+
+}
+
+.grid__historiados{
+    grid-area: textodos;
+
+}
+
+.grid__historiatres{
+    grid-area: textotres;
+
+}
+
+.gridhistoria__imagenesDos{
+    grid-area: imagendos;
+    
+}
+.grid__cinco{
+    width: 20vw;
+}
+.gridhistoria__imagenesTres{
+    grid-template-columns: imagentres;
+}
+
+.grid__seis{
+    width: 20vw;
+}
+
+.gridhistoria__imagenesCuatro{
+    grid-area: imagencuatro;
+}
+.grid__siete{
+    width: 20vw;
+}
+
+.img__ferreteria{
+    width: 20vw;
+}
+
+@media (min-width: 320px) and (max-width: 540px) {
+    /*cambios estructurales*/
+.grid__historia{ 
+    grid-template-columns:  1fr;
+    grid-template-areas: 
+    "imagen" 
+    "textouno" 
+    "textodos"
+    "textotres" 
+    "textotres" 
+    "textotres"
+    "imagendos"
+    "imagentres"
+    "imagencuatro";
+    background-color: darkorange;
+}
+
+} 
+
+@media (min-width: 541px) and (max-width: 720px) {
+    /*cambios estructurales*/
+.grid__historia{ 
+    grid-template-columns:  1fr 1fr;
+    grid-template-areas: 
+    "imagen textouno" 
+    "textodos textotres"
+    "imagendos imagentres"
+    "imagencuatro imagencuatro" 
+    ;
+    background-color: chartreuse;
+} 
+
+}
