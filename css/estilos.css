@@ -63,6 +63,7 @@ a{ text-decoration: none;
     font-family: 'Oswald', sans-serif; 
     border-radius:  1rem;
     text-align: center;
+    padding: 1rem;
 }
 .portada__telefono{
     border-radius: 10px;
@@ -79,7 +80,7 @@ a{ text-decoration: none;
     display: flex;
     font-family:'Oswald', sans-serif;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
 }
 
@@ -97,34 +98,25 @@ a{ text-decoration: none;
     border-radius: 1rem;
 }
 
-.herramientas__productos--destacado{
-    display:flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: nowrap;
-    background-color: rgb(231, 235, 238);
-    margin: 1rem;
-    padding: 1.7rem;
-    width: 15vw;
-    height:80vh;
-    border: 4px ridge black;
-    border-radius: 1rem;
-}
-.img__venta{
-    width: 15vw;
-    
-}
+
+
 
 .boton{
     display: flex;
-    flex-direction: column;
+    flex-direction:column; 
     color: rgb(27, 23, 23);
     background-color: rgb(190, 162, 216);    
     border-radius: 1rem;
-    width: 18vw;
+    width: 100%;    
     border-bottom: 5rem;
-    
+    padding: 10px;
+       
+}
+button:hover{
+    transform: scale(1.2);
+    transition: all 3s;
+    background-color: rgb(241, 183, 94);
+    cursor: pointer;
 }
 
 .ayuda{display: flex;
@@ -139,19 +131,54 @@ a{ text-decoration: none;
     background-color: rgb(126, 121, 182);
     font-family: ´Oswald´, sans-serif;
     border-radius: 1rem;
+    margin:1rem;
     }
 
-.ayuda__video{ display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    flex-direction:row;
-    margin:1rem;    
+.ayuda__video{ 
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content: space-around;
+    align-items:stretch;
+    margin: 1rem;
     padding: 1rem;
-    border-right: 2rem;
-    border-radius: 1rem; 
-    width: 25vw;
-    height: 50vh;
+    
  }
+
+ iframe{
+     border-radius: 2rem;
+     margin: 1rem;
+      }
+
+ @media (min-width: 320px) and (max-width: 540px){
+     .img__venta{
+         width: 30vw;
+         height: 30vh;
+     }
+     .herramientas__productos{
+         width: 70vw;
+         height: 55vh;
+     }
+    iframe{
+        width: 40vw;
+        height: 30vh;
+    }
+
+}
+
+@media (min-width: 541px) and (max-width: 720px){
+    .img__venta{
+       width: 20vw;
+       height: 20vh;
+    }
+    .herramientas__productos{
+        width: 60vw;
+        height: 60vh;
+    }
+    iframe{
+        width: 40vw;
+        height: 40vh;
+    }
+}
 
 .footer__disclaimer{
     text-align: center;
@@ -184,6 +211,7 @@ a{ text-decoration: none;
     flex-wrap: wrap;
     justify-content: center; 
     text-align: center;   
+    align-items: center;
     background-color: rgb(0,0,0,0.2);
     margin:auto;
     padding: 1rem;
@@ -191,7 +219,6 @@ a{ text-decoration: none;
     border-radius: 20px;
       
 }
-
   
 .main__formularioNombre{
     width: 23rem;
@@ -201,6 +228,7 @@ a{ text-decoration: none;
     background-color: aquamarine;
     border: none;
     text-align: center;
+    border-radius: 0.5rem;
 }
 
 .main__formularioMail{
@@ -211,6 +239,7 @@ a{ text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     background-color: aquamarine ;
     text-align: center;
+    border-radius: 0.5rem;
 }
 
 .main__formularioTelefono{
@@ -221,6 +250,7 @@ a{ text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     background-color: aquamarine;
     text-align: center;
+    border-radius: 0.5rem;
 }
 
 .main__formularioComentario{
@@ -231,7 +261,8 @@ a{ text-decoration: none;
     margin:1rem;
     min-height: 100px;  
     max-height: 200px;
-    max-width: 23rem;    
+    max-width: 23rem; 
+    border-radius: 0.5rem;   
 }
 
 label{
@@ -250,20 +281,66 @@ label{
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center; 
+    
 }
 
 .main__enviar{
-    width: 24rem;
+    width: 18rem;
     font-size: medium;
     background-color: rgb(217, 238, 247);
     margin: 10px;
+    border-radius: 7rem;
+    
+}
+.main__enviar:hover{
+    transform: scale(1.2);
+    background-color: green ;
 }
 
 .main__limpiar{
-    width: 24rem;
+    width: 18rem;
     font-size: medium;
     background-color: rgb(217, 238, 247);
-    margin: 10px
+    margin: 10px;
+    border-radius: 7rem;
+}
+.main__limpiar:hover{
+    transform: scale(1.2);
+    background-color: red;
+
+}
+
+@media (min-width: 320px) and (max-width: 540px){
+    .formulario{
+        width:80vw;
+    }
+    .main__formularioNombre{
+        width: 80vw;
+    }
+    .main__formularioMail{
+        width: 80vw;
+    }
+    .main__formularioTelefono{
+        width: 80vw;
+    }
+    .main__formularioComentario{
+        width: 80vw;
+    }
+    .main__enviar{
+        width: 50vw
+    }
+    .main__limpiar{
+        width: 50vw;
+    }
+    }
+    @media (min-width: 541px) and (max-width: 720px){
+   
+    .main__enviar{
+        width: 40vh;
+    }
+    .main__limpiar{
+        width: 40vh;
+    }
 }
 
 .titulo__producto{
@@ -271,17 +348,21 @@ label{
     font-family: Arial, Helvetica, sans-serif;
 }
   
-.producto{display: flex;
-    flex-wrap: wrap;  
-    flex-direction: row;  
-    justify-content:space-between;
-    margin: 20px;
-    height: 500px
+.producto{display: grid;
+    justify-items: center;
+    border: red solid 2px;
+    gap: 2rem;
+    margin: 1rem;
+    padding: 1rem;  
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);    
     
 }
 
+
 .producto__antideslizantes{
     border-radius: 10px;
+    
 }
 
 .producto__chapalisa{
@@ -316,10 +397,103 @@ label{
     border-radius: 10px;
 }
 
+.producto__antideslizantes:hover{
+    transform: scale(1.1);
+    cursor:pointer;
+}
+
+.producto__chapalisa:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.producto__conduccion:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.producto__hierrosymallas:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.producto__chapas:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.producto__estructurales:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.producto__metaldesplegado:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.producto__hierrosyperfiles:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.producto__herramientas:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+@media (min-width: 541px) and (max-width: 720px) {
+    .producto{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr); 
+
+    }
+}
+@media (min-width: 320px) and (max-width: 540px) {
+    .producto{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+
+
+
 .envios{
+    background: rgb(126,160,180);
+    background: -moz-linear-gradient(90deg, rgba(126,160,180,1) 0%, rgba(244,244,244,1) 49%);
+    background: -webkit-linear-gradient(90deg, rgba(126,160,180,1) 0%, rgba(244,244,244,1) 49%);
+    background: linear-gradient(90deg, rgba(126,160,180,1) 0%, rgba(244,244,244,1) 49%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7ea0b4",endColorstr="#f4f4f4",GradientType=1); 
     display: flex;
-    flex-wrap: wrap;
-    font-family: Arial, Helvetica, sans-serif;}
+    flex-wrap:wrap;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1rem;
+    border-radius: 1.5rem;
+    padding: 1rem;
+}
+
+.envios__titulo{
+        display: flex;
+        flex-direction: row-reverse;   
+    
+}
+
+@media (min-width: 320px) and (max-width: 540px) {
+   .envios{
+       width: 85vw;
+       margin: 0.5rem;       
+   }
+   .miniflete{
+       width: 10vw;
+       height: 10vh;
+   }
+}
+@media (min-width: 541px) and (max-width: 720px) {
+    .envios{
+        width: 90vw;
+    }
+}
+
 
 .grid__historia{
     display: grid;   
@@ -403,14 +577,13 @@ label{
 
 @media (min-width: 541px) and (max-width: 720px) {
     /*cambios estructurales*/
-.grid__historia{ 
+    .grid__historia { 
     grid-template-columns:  1fr 1fr;
     grid-template-areas: 
     "imagen textouno" 
     "textodos textotres"
     "imagendos imagentres"
-    "imagencuatro imagencuatro" 
-    ;
+    "imagencuatro imagencuatro" ;
     background-color: chartreuse;
 } 
 
