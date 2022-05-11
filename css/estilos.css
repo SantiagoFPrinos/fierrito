@@ -104,12 +104,14 @@ a{ text-decoration: none;
 .boton{
     display: flex;
     flex-direction:column; 
+    align-items: center;
     color: rgb(27, 23, 23);
     background-color: rgb(190, 162, 216);    
     border-radius: 1rem;
     width: 100%;    
     border-bottom: 5rem;
-    padding: 10px;
+    padding: 0.8rem;
+    font-size: medium;
        
 }
 button:hover{
@@ -144,42 +146,12 @@ button:hover{
     
  }
 
- iframe{
+iframe{
      border-radius: 2rem;
      margin: 1rem;
-      }
-
- @media (min-width: 320px) and (max-width: 540px){
-     .img__venta{
-         width: 30vw;
-         height: 30vh;
-     }
-     .herramientas__productos{
-         width: 70vw;
-         height: 55vh;
-     }
-    iframe{
-        width: 40vw;
-        height: 30vh;
-    }
-
 }
 
-@media (min-width: 541px) and (max-width: 720px){
-    .img__venta{
-       width: 20vw;
-       height: 20vh;
-    }
-    .herramientas__productos{
-        width: 60vw;
-        height: 60vh;
-    }
-    iframe{
-        width: 40vw;
-        height: 40vh;
-    }
-}
-
+ 
 .footer__disclaimer{
     text-align: center;
     font-family:'Oswald', sans-serif ;
@@ -310,39 +282,6 @@ label{
 
 }
 
-@media (min-width: 320px) and (max-width: 540px){
-    .formulario{
-        width:80vw;
-    }
-    .main__formularioNombre{
-        width: 80vw;
-    }
-    .main__formularioMail{
-        width: 80vw;
-    }
-    .main__formularioTelefono{
-        width: 80vw;
-    }
-    .main__formularioComentario{
-        width: 80vw;
-    }
-    .main__enviar{
-        width: 50vw
-    }
-    .main__limpiar{
-        width: 50vw;
-    }
-    }
-    @media (min-width: 541px) and (max-width: 720px){
-   
-    .main__enviar{
-        width: 40vh;
-    }
-    .main__limpiar{
-        width: 40vh;
-    }
-}
-
 .titulo__producto{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -350,7 +289,12 @@ label{
   
 .producto{display: grid;
     justify-items: center;
-    border: red solid 2px;
+    background: rgb(126,160,180);
+    background: -moz-linear-gradient(90deg, rgba(126,160,180,1) 0%, rgba(244,244,244,1) 49%);
+    background: -webkit-linear-gradient(90deg, rgba(126,160,180,1) 0%, rgba(244,244,244,1) 49%);
+    background: linear-gradient(90deg, rgba(126,160,180,1) 0%, rgba(244,244,244,1) 49%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7ea0b4",endColorstr="#f4f4f4",GradientType=1); 
+    border-radius: 2rem;
     gap: 2rem;
     margin: 1rem;
     padding: 1rem;  
@@ -441,21 +385,6 @@ label{
     transform: scale(1.1);
     cursor: pointer;
 }
-@media (min-width: 541px) and (max-width: 720px) {
-    .producto{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr); 
-
-    }
-}
-@media (min-width: 320px) and (max-width: 540px) {
-    .producto{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-    }
-}
-
-
 
 .envios{
     background: rgb(126,160,180);
@@ -478,27 +407,15 @@ label{
     
 }
 
-@media (min-width: 320px) and (max-width: 540px) {
-   .envios{
-       width: 85vw;
-       margin: 0.5rem;       
-   }
-   .miniflete{
-       width: 10vw;
-       height: 10vh;
-   }
-}
-@media (min-width: 541px) and (max-width: 720px) {
-    .envios{
-        width: 90vw;
-    }
-}
-
-
 .grid__historia{
     display: grid;   
-    border: 5px solid yellow;
     font-family: Arial, Helvetica, sans-serif;
+    background: rgb(126,160,180);
+    background: -moz-linear-gradient(90deg, rgba(126,160,180,1) 0%, rgba(244,244,244,1) 49%);
+    background: -webkit-linear-gradient(90deg, rgba(126,160,180,1) 0%, rgba(244,244,244,1) 49%);
+    background: linear-gradient(90deg, rgba(126,160,180,1) 0%, rgba(244,244,244,1) 49%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7ea0b4",endColorstr="#f4f4f4",GradientType=1); 
+    border-radius: 2rem;
     gap: 1 rem;  
     padding: 2rem;
     font-size:1rem;
@@ -572,8 +489,53 @@ label{
     "imagencuatro";
     background-color: darkorange;
 }
+.producto{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+.envios{
+    width: 85vw;
+    margin: 0.5rem; 
 
 } 
+.miniflete{
+    width: 10vw;
+    height: 10vh;
+}
+.formulario{
+    width:80vw;
+}
+.main__formularioNombre{
+    width: 80vw;
+}
+.main__formularioMail{
+    width: 80vw;
+}
+.main__formularioTelefono{
+    width: 80vw;
+}
+.main__formularioComentario{
+    width: 80vw;
+}
+.main__enviar{
+    width: 50vw
+}
+.main__limpiar{
+    width: 50vw;
+}
+.img__venta{
+    width: 30vw;
+    height: 30vh;
+}
+.herramientas__productos{
+    width: 70vw;
+    height: 55vh;
+}
+iframe{
+   width: 40vw;
+   height: 30vh;
+}
+}
 
 @media (min-width: 541px) and (max-width: 720px) {
     /*cambios estructurales*/
@@ -586,5 +548,30 @@ label{
     "imagencuatro imagencuatro" ;
     background-color: chartreuse;
 } 
+.producto{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr); 
 
+}
+.envios{
+    width: 90vw;
+}
+.main__enviar{
+    width: 40vh;
+}
+.main__limpiar{
+    width: 40vh;
+}
+.img__venta{
+    width: 20vw;
+    height: 20vh;
+ }
+ .herramientas__productos{
+     width: 60vw;
+     height: 60vh;
+ }
+ iframe{
+     width: 40vw;
+     height: 40vh;
+ }
 }
