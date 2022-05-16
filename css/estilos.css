@@ -75,6 +75,7 @@ a{ text-decoration: none;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
+/* 
 
 .herramientas{ 
     display: flex;
@@ -120,6 +121,16 @@ button:hover{
     background-color: rgb(241, 183, 94);
     cursor: pointer;
 }
+ */
+
+ .container-fluid{
+    align-content: start;
+ }
+.card{
+    background-color: rgb(231, 235, 238);
+    border-radius: 2rem;
+}
+
 
 .ayuda{display: flex;
     margin:1rem;
@@ -287,6 +298,7 @@ label{
     font-family: Arial, Helvetica, sans-serif;
 }
   
+/* 
 .producto{display: grid;
     justify-items: center;
     background: rgb(126,160,180);
@@ -385,7 +397,8 @@ label{
     transform: scale(1.1);
     cursor: pointer;
 }
-
+*/
+ 
 .envios{
     background: rgb(126,160,180);
     background: -moz-linear-gradient(90deg, rgba(126,160,180,1) 0%, rgba(244,244,244,1) 49%);
