@@ -9,14 +9,14 @@ body{background-color: darkgrey;
 li{ display: inline;
 }
 
-header{display: flex; 
+/* header{display: flex; 
     justify-content: flex-end;
     height: 1 rem;
  
     align-items: center;
     background-color: rgb(150, 119, 135);
     border-radius: 10px;
-}
+} */
 
 .header__logo{display: inline;}
 
@@ -25,6 +25,22 @@ header{display: flex;
     background-color: rgb(139, 115, 128)
 
 }
+
+.bg-gris{
+    background-color: rgb(190, 151, 172);
+    
+}
+.nav-link{
+    color: white
+}
+.navbar-toggler{
+    background-color: rgb(9, 134, 223);
+
+}
+.navbar-toggler-icon{
+    background-color: rgb(104, 223, 140);
+}
+
 
 .header__navegacion{
     padding: 0.3 rem; border-radius: 10px;
@@ -112,13 +128,13 @@ a{ text-decoration: none;
     font-size: medium;
        
 }
-button:hover{
+/* button:hover{
     transform: scale(1.2);
     transition: all 3s;
     background-color: rgb(241, 183, 94);
     cursor: pointer;
 }
-
+ */
 
 .card{
     border-radius: 2rem;
@@ -425,6 +441,7 @@ label{
 .envios__titulo{
         display: flex;
         flex-direction: row-reverse;   
+        margin-bottom: 4rem;
     
 }
 
