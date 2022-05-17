@@ -304,107 +304,14 @@ label{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
-  
-/* 
-.producto{display: grid;
-    justify-items: center;
-    background: rgb(126,160,180);
-    background: -moz-linear-gradient(90deg, rgba(126,160,180,1) 0%, rgba(244,244,244,1) 49%);
-    background: -webkit-linear-gradient(90deg, rgba(126,160,180,1) 0%, rgba(244,244,244,1) 49%);
-    background: linear-gradient(90deg, rgba(126,160,180,1) 0%, rgba(244,244,244,1) 49%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7ea0b4",endColorstr="#f4f4f4",GradientType=1); 
+
+.img-fluid:hover{
     border-radius: 2rem;
-    gap: 2rem;
-    margin: 1rem;
-    padding: 1rem;  
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);    
-    
-}
-
-
-.producto__antideslizantes{
-    border-radius: 10px;
-    
-}
-
-.producto__chapalisa{
-    border-radius: 10px;
-}
-
-.producto__conduccion{
-    border-radius: 10px;
-}
-
-.producto__hierrosymallas{
-    border-radius: 10px;
-}
-
-.producto__chapas{
-    border-radius: 10px;
-}
-
-.producto__estructurales{
-    border-radius: 10px;
-}
-
-.producto__metaldesplegado{
-    border-radius: 10px;
-}
-
-.producto__hierrosyperfiles{
-    border-radius: 10px;
-}
-
-.producto__herramientas{
-    border-radius: 10px;
-}
-
-.producto__antideslizantes:hover{
     transform: scale(1.1);
     cursor:pointer;
 }
+  
 
-.producto__chapalisa:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-.producto__conduccion:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-.producto__hierrosymallas:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-.producto__chapas:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-.producto__estructurales:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-.producto__metaldesplegado:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-.producto__hierrosyperfiles:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-.producto__herramientas:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-}
-*/
  
 .envios{
     background: rgb(126,160,180);
