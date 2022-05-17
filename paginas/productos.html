@@ -8,12 +8,15 @@
     <link rel="preconectar" href="https://fonts.googleapis.com">
     <link rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
     <link href="https: //fonts.googleapis.com/css2? family= Oswald:wght@500 &familia= Roboto:peso@700 & display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- css -->
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Fierrito Productos</title>
 </head>
 <body>
     <header>
-        <a class header__logo href="../index.html"> <img src="../recursos/favicon-16x16.png" alt="logo"> </a>
+     <!--    <a class header__logo href="../index.html"> <img src="../recursos/favicon-16x16.png" alt="logo"> </a>
         <h1 class="header__titulo"> Fierrito Hogar, Hierros y Maquinarias </h1>
         <nav class="header__navegacion">
             <ul class="header__referencias">
@@ -23,7 +26,36 @@
                 <li><a href="historia.html">historia</a></li>
                 <li><a href="productos.html">productos</a></li>
             </ul>
-        </nav>
+        </nav> -->
+        <nav class="navbar navbar-expand-lg bg-gris">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"></a>
+              <img src="../recursos/favicon-16x16.png" alt="Logo" width="30" height="24">Fierrito Hogar Hierros y Maquinarias.
+            
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../paginas/envios.html">Envios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../paginas/historia.html">Historia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../paginas/productos.html">Productos</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <main>
         
@@ -32,33 +64,68 @@
                 <h2> Productos</h2>
             </div>
             </section>
-        <section class="producto"> 
-            <div>
-                <img class="producto__antideslizantes"  src="../recursos/antideslizantes.png" alt="antideslizantes">                                      
-            </div>
-            <div>
-                <img class="producto__chapalisa"  src="../recursos/chapalisa.png" alt="chapalisa">
-            </div>
-             <div>
-                 <img class=" producto__conduccion" src="../recursos/conduccion.png" alt="conduccion">
-            </div>            <div>
-                 <img class="producto__hierrosymallas" src="../recursos/hierrosymallas.png" alt="hierrosymallas">    
-            </div>
-            <div>
-                 <img class="producto__chapas" src="../recursos/chapas.png" alt="chapas">
-            </div>
-            <div>
-                 <img class="producto__estructurales" src="../recursos/estructurales.png" alt="estructurales">
-            </div>
-            <div>
-                <img class="producto__metaldesplegado"src="../recursos/metaldespleago.png" alt="metaldesplegado">
-            </div>
-            <div>
-                <img class="producto__hierrosyperfiles" src="../recursos/hierrosyperfiles.png"  alt="hierros y perfiles">
-            </div>
-            <div>
-                <img class="producto__herramientas" src="../recursos/herramientas-de-soldadura.jpg" alt="herramientas">
-            </div>
+        <section class="container"> 
+            <article class="row">
+                <div class="col-xl-4 col-md-6    col-sm-6">
+                    <img class="img-fluid" src="../recursos/antideslizantes.png">
+                        <p> 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem esse quis, non unde minus facilis rerum molestiae delectus consequuntur a veritatis hic in earum, facere fugit perspiciatis velit voluptate reiciendis?
+                        </p>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-6"> 
+                    <img class="img-fluid" src="../recursos/chapas.png">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ad quas esse eum animi autem rerum neque sequi non sapiente impedit, soluta quis eveniet laborum, molestiae dignissimos, adipisci facilis voluptate!
+                        </p>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-6">
+                    <img class="img-fluid" src="../recursos/hierroconstruccion.png">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea temporibus, quidem error ducimus inventore quos veniam consequuntur doloremque mollitia vel enim officia dicta cupiditate, maxime minima accusamus. Beatae, facilis numquam.
+                        </p>
+                </div>
+            </article>
+            <article class="row"> 
+                <div class="col-xl-4 col-md-6 col-sm-6">
+                    <img class="img-fluid" src="../recursos/conduccion.png">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facere neque possimus eum cumque. Voluptates accusantium reiciendis magnam rerum amet obcaecati, deserunt totam deleniti, eius libero, minus odit aliquid dignissimos?
+                    </p>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-6">
+                    <img class="img-fluid" src="../recursos/estructurales.png">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius beatae laborum consequuntur libero id voluptatem alias sed dicta. Aliquid praesentium nostrum distinctio eligendi assumenda ratione, tempore quod doloremque suscipit sapiente.
+                    </p>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-6">
+                    <img class="img-fluid" src="../recursos/metaldespleago.png">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima animi ipsum odit non. Voluptates exercitationem incidunt, id laudantium illo necessitatibus earum labore doloribus unde expedita, cupiditate omnis voluptatem eius veniam?
+                    </p>
+                </div>
+            </article>
+            <article class="row">
+                <div class="col-xl-4 col-md-6 col-sm-6">
+                    <img class="img-fluid" src="../recursos/hierrosymallas.png">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit vitae asperiores odio inventore, molestias nulla dignissimos mollitia aliquam quam dolore impedit debitis facere eaque ipsa corrupti quos. Consectetur, tenetur amet!
+                    </p>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-6">
+                    <img class="img-fluid" src="../recursos/hierrosyperfiles.png">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo suscipit voluptate, libero ab consequatur laudantium quaerat itaque sint rem ducimus pariatur ea officia quasi corporis temporibus quia quo qui ullam?
+                    </p>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-6">
+                    <img class="img-fluid" src="../recursos/herramientas-de-soldadura.jpg">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, dolore illum laudantium quis magni ipsam dicta! Quisquam repudiandae ipsam modi quasi debitis quidem eos a velit exercitationem. Magni, quo tempore.
+                    </p>
+                </div>
+            </article>
+            
 
         </section>
     </main>
@@ -76,5 +143,7 @@
             </ul>
         </div>
     </footer>
+<!-- script bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
