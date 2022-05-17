@@ -9,6 +9,39 @@ body{background-color: darkgrey;
 li{ display: inline;
 }
 
+<<<<<<< HEAD
+.bg-gris{
+    background-color: rgb(190, 151, 172);
+    
+}
+.nav-link{
+    color: white
+}
+.navbar-toggler{
+    background-color: rgb(9, 134, 223);
+=======
+/* header{display: flex; 
+    justify-content: flex-end;
+    height: 1 rem;
+ 
+    align-items: center;
+    background-color: rgb(150, 119, 135);
+    border-radius: 10px;
+} */
+
+.header__logo{display: inline;}
+
+.header__titulo{display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(139, 115, 128)
+>>>>>>> 733aeb92b529179eb8e2860263992e98d33fee96
+
+}
+.navbar-toggler-icon{
+    background-color: rgb(104, 223, 140);
+}
+
+
 .bg-gris{
     background-color: rgb(190, 151, 172);
     
@@ -304,14 +337,69 @@ label{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
+<<<<<<< HEAD
 
 .img-fluid:hover{
+=======
+  
+/* 
+.producto{display: grid;
+    justify-items: center;
+    background: rgb(126,160,180);
+    background: -moz-linear-gradient(90deg, rgba(126,160,180,1) 0%, rgba(244,244,244,1) 49%);
+    background: -webkit-linear-gradient(90deg, rgba(126,160,180,1) 0%, rgba(244,244,244,1) 49%);
+    background: linear-gradient(90deg, rgba(126,160,180,1) 0%, rgba(244,244,244,1) 49%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7ea0b4",endColorstr="#f4f4f4",GradientType=1); 
+>>>>>>> 733aeb92b529179eb8e2860263992e98d33fee96
     border-radius: 2rem;
     transform: scale(1.1);
     cursor:pointer;
 }
   
 
+<<<<<<< HEAD
+=======
+.producto__chapalisa:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.producto__conduccion:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.producto__hierrosymallas:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.producto__chapas:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.producto__estructurales:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.producto__metaldesplegado:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.producto__hierrosyperfiles:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.producto__herramientas:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+*/
+>>>>>>> 733aeb92b529179eb8e2860263992e98d33fee96
  
 .envios{
     background: rgb(126,160,180);
