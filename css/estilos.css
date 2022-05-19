@@ -44,6 +44,7 @@ a{ text-decoration: none;
 .portada{margin: 30px;
     display: flex;
     justify-content: space-between;
+    
 }
 
 .portada__mapa{margin: 10px;
@@ -109,8 +110,8 @@ a{ text-decoration: none;
     border-bottom: 5rem;
     padding: 0.8rem;
     font-size: medium;
-       
 }
+
 button:hover{
     transform: scale(1.2);
     transition: all 3s;
@@ -164,11 +165,16 @@ button:hover{
     background-color: rgb(126, 121, 182);
     flex-direction: column;
     border-radius: 1rem;
+    background: rgb(126,160,180);
+    background: -moz-linear-gradient(90deg, rgba(126,160,180,1) 0%, rgba(244,244,244,1) 49%);
+    background: -webkit-linear-gradient(90deg, rgba(126,160,180,1) 0%, rgba(244,244,244,1) 49%);
+    background: linear-gradient(90deg, rgba(126,160,180,1) 0%, rgba(244,244,244,1) 49%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7ea0b4",endColorstr="#f4f4f4",GradientType=1); 
 }
 
 .ayuda__descripcion{ 
     text-align: center;
-    background-color: rgb(126, 121, 182);
+    
     font-family: ´Oswald´, sans-serif;
     border-radius: 1rem;
     margin:1rem;
@@ -181,15 +187,13 @@ button:hover{
     align-items:stretch;
     margin: 1rem;
     padding: 1rem;
-    
- }
+}
 
 iframe{
      border-radius: 2rem;
      margin: 1rem;
 }
 
- 
 .footer__disclaimer{
     text-align: center;
     font-family:'Oswald', sans-serif ;
@@ -225,11 +229,10 @@ iframe{
     background-color: rgb(0,0,0,0.2);
     margin:auto;
     padding: 1rem;
-    width:22rem;
-    border-radius: 20px;
-      
+    width:25rem;
+    border-radius: 20px;      
 }
-  
+
 .main__formularioNombre{
     width: 23rem;
     margin: 1rem;
@@ -283,7 +286,7 @@ label{
 .main__formularioNewsletter{
     font-family: Arial, Helvetica, sans-serif;
     color: aliceblue;
-   
+
 }
 
 .main__boton{
@@ -325,7 +328,6 @@ label{
     font-family: Arial, Helvetica, sans-serif;
 }
 
- 
 .producto{display: grid;
     justify-items: center;
     background: rgb(126,160,180);
@@ -336,7 +338,6 @@ label{
     transform: scale(1.1);
     cursor:pointer;
 }
-  
 
 .img-fluid:hover{
     transform: scale(1.2);
@@ -390,11 +391,12 @@ label{
 
 .img__ferreteria{
     grid-area: imagen;
+    border-radius: 2rem;
 }
 
 .grid__historiauno{
     grid-area: textouno;
-
+    
 }
 
 .grid__historiados{
@@ -409,6 +411,7 @@ label{
 
 .gridhistoria__imagenesDos{
     grid-area: imagendos;
+    border-radius: 2rem;
     
 }
 .grid__cinco{
@@ -416,6 +419,7 @@ label{
 }
 .gridhistoria__imagenesTres{
     grid-template-columns: imagentres;
+    border-radius: 2rem;
 }
 
 .grid__seis{
@@ -424,6 +428,7 @@ label{
 
 .gridhistoria__imagenesCuatro{
     grid-area: imagencuatro;
+    border-radius: 2rem;
 }
 .grid__siete{
     width: 20vw;
