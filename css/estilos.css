@@ -190,8 +190,8 @@ button:hover{
 }
 
 iframe{
-     border-radius: 2rem;
-     margin: 1rem;
+    border-radius: 2rem;
+    margin: 1rem;
 }
 
 .footer__disclaimer{
@@ -213,12 +213,13 @@ iframe{
     background-size: 100vw 100vh;
     background-attachment: fixed;
 }
-.main__titulo{text-align: center;
+.main__titulo{
+    text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: large;
+    font-size: x-large;
     margin-bottom: 10px;
-    color: rgb(197, 243, 243);
-
+    color: black;
+    
 }
 .formulario{
     display: flex;
