@@ -338,48 +338,12 @@ label{
 }
   
 
-
-
-.producto__chapalisa:hover{
-    transform: scale(1.1);
-    cursor: pointer;
+.img-fluid:hover{
+    transform: scale(1.2);
+    border-radius: 2rem;
+    cursor: pointer
+    
 }
-
-.producto__conduccion:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-.producto__hierrosymallas:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-.producto__chapas:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-.producto__estructurales:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-.producto__metaldesplegado:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-.producto__hierrosyperfiles:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-.producto__herramientas:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
 
 .envios{
     background: rgb(126,160,180);
