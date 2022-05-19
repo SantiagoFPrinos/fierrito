@@ -74,7 +74,7 @@ a{ text-decoration: none;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
-/* 
+
 
 
 .herramientas{ 
@@ -118,8 +118,8 @@ a{ text-decoration: none;
     background-color: rgb(241, 183, 94);
     cursor: pointer;
 }
- */
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .card{
     border-radius: 2rem;
@@ -144,10 +144,27 @@ a{ text-decoration: none;
  .container-fluid{
     align-content: start;
  }
+=======
+
+>>>>>>> 7d03c86 (bootstrap en index)
 .card{
-    background-color: rgb(231, 235, 238);
     border-radius: 2rem;
 }
+.card-img-top{
+    border-radius: 2rem;
+}
+.card-body{
+    background-color: rgb(231, 235, 238);
+    border-radius: 2rem;
+
+}
+.btn:hover{
+    transform: scale(1.2);
+    transition: all 3s;
+    background-color: rgb(252, 236, 22);
+    cursor: pointer;
+}
+
 
 >>>>>>> 294b50f (bootstrap en productos)
 
