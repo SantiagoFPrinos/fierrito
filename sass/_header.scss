@@ -1,0 +1,16 @@
+.header__navegacion{
+    padding: 0.3rem; border-radius: 10px;
+    flex-grow: 1;
+}
+
+.header__referencias{ display: flex;
+    flex-wrap: wrap; justify-content: flex-end;
+}
+
+li{ font-family: 'Oswald', sans-serif;
+    padding: 20px;
+}
+
+a{ text-decoration: none;
+color: black;
+}

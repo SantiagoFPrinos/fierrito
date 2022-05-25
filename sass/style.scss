@@ -1,38 +1,38 @@
+@import 'variables';
+@import 'header';
+@import 'footer';
+@import 'boton';
+@import 'mediaqueries';
 *{margin: 0px;
     padding: 0px;   
 }
 
-body{background-color: darkgrey;
-}
-
-li{ display: inline;
+body{background-color: $color-principal;
 }
 
 .bg-gris{
-    background-color: rgb(190, 151, 172);
+    background-color: $color-navegacion;
 }
 
 .nav-link{
-    color: white
+    color: $color-letras-nav
 }
 
-.header__navegacion{
-    padding: 0.3 rem; border-radius: 10px;
-    flex-grow: 1;
+.navbar-toggler{
+    border-color: $color-letras-nav;
+}
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-.header__referencias{ display: flex;
-    flex-wrap: wrap; justify-content: flex-end;
+li{ font-family: $font-navegacion;
+    padding: 0.7rem;
+    a{ text-decoration: none;
+        color: $color-titulo-principal
+        }
 }
 
-li{ font-family: 'Oswald', sans-serif;
-    padding: 20px;
-}
-
-a{ text-decoration: none;
-color: black;
-}
-
+/* main */
 .portada{
     margin: 30px;
     display: flex;
@@ -47,9 +47,9 @@ color: black;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        background-color: rgb(126, 121, 182);
+        background-color: $color-horario;
         width: 40vw;
-        font-family: 'Oswald', sans-serif; 
+        font-family: $font-navegacion; 
         border-radius:  1rem;
         text-align: center;
         padding: 1rem;
@@ -63,12 +63,12 @@ color: black;
 
 .titulo__destacado{
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $font-titulo-destacado;
 }
 
 .herramientas{ 
     display: flex;
-    font-family:'Oswald', sans-serif;
+    font-family: $font-navegacion;
     flex-wrap: wrap;
     justify-content:space-between;
     text-align: center;
@@ -77,7 +77,7 @@ color: black;
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: center;
-        background-color: rgb(231, 235, 238)  ;
+        background-color: $color-cards;
         margin: 1rem;
         padding: 1.7rem;
         width: 20vw;
@@ -87,7 +87,7 @@ color: black;
     }
 }
 
-.boton{
+/* .boton{
     display: flex;
     flex-direction:column; 
     align-items: center;
@@ -98,47 +98,31 @@ color: black;
     border-bottom: 5rem;
     padding: 0.8rem;
     font-size: medium;
-}
-
-button:hover{
-    transform: scale(1.2);
-    transition: all 3s;
-    background-color: rgb(241, 183, 94);
-    cursor: pointer;
-}
-
+} */
 
 .btn:hover{
     transform: scale(1.2);
     transition: all 3s;
-    background-color: rgb(252, 236, 22);
+    background-color: $color-btn;
     cursor: pointer;
 }
 
 .card{
     border-radius: 2rem;
-}
-
-.card-img-top{
-    border-radius: 2rem;
-}
-
-.card-body{
-    background-color: rgb(231, 235, 238);
-    border-radius: 2rem;
-
-}
-.btn:hover{
-    transform: scale(1.2);
-    transition: all 3s;
-    background-color: rgb(252, 236, 22);
-    cursor: pointer;
+    &-img-top{
+        border-radius: 2rem;
+    }
+    &-body{
+        background-color: $color-cards;
+        border-radius: 2rem;
+    
+    }
 }
 
 .ayuda{
     display: flex;
     margin:1rem;
-    background-color: rgb(126, 121, 182);
+    background-color: $color-horario;
     flex-direction: column;
     border-radius: 1rem;
     background: rgb(126,160,180);
@@ -148,7 +132,7 @@ button:hover{
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7ea0b4",endColorstr="#f4f4f4",GradientType=1); 
     &__descripcion{
         text-align: center;
-        font-family: ´Oswald´, sans-serif;
+        font-family: $font-navegacion;
         border-radius: 1rem;
         margin:1rem;
     }
@@ -160,38 +144,36 @@ button:hover{
         margin: 1rem;
         padding: 1rem;
     }
-}
-
-iframe{
-    border-radius: 2rem;
-    margin: 1rem;
+    iframe{
+        border-radius: 2rem;
+        margin: 1rem;
+    }
 }
 
 .footer__disclaimer{
     text-align: center;
-    font-family:'Oswald', sans-serif ;
+    font-family: $font-footer;
+    &__redes{
+            text-align: center;
+    }
+    &__logos{
+            text-align: right;
+        }
 }
 
-.footer__redes{
-    font-family: 'Oswald', sans-serif ;
-    text-align: center;
-}
 
-.footer__logos{
-    text-align: right;
-}
 
 .imagenFondo{
-    background-image: url(../recursos/proyecto-fierro.jpg);
+    background-image: url(../recursos/flag-of-argentina.png);
     background-size: 100vw 100vh;
     background-attachment: fixed;
-}
-.main__titulo{
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: x-large;
-    margin-bottom: 10px;
-    color: black;
+    .main__titulo{
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: x-large;
+        margin-bottom: 10px;
+        color: black;
+    }
 }
 
 .formulario{
@@ -204,93 +186,84 @@ iframe{
     margin:auto;
     padding: 1rem;
     width:25rem;
-    border-radius: 20px;      
-}
-
-.main__formularioNombre{
-    width: 23rem;
-    margin: 1rem;
-    height: 5vh;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: aquamarine;
-    border: none;
-    text-align: center;
-    border-radius: 0.5rem;
-}
-
-.main__formularioMail{
-    width: 23rem;
-    margin: 1rem;
-    height:5vh;
-    border: none;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: aquamarine ;
-    text-align: center;
-    border-radius: 0.5rem;
-}
-
-.main__formularioTelefono{
-    width: 23rem;
-    margin: 1rem;
-    height: 5vh;
-    border:none;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: aquamarine;
-    text-align: center;
-    border-radius: 0.5rem;
-}
-
-.main__formularioComentario{
-    width:24rem;
-    background-color: aquamarine;
-    text-align: center;
-    border:none;
-    margin:1rem;
-    min-height: 100px;  
-    max-height: 200px;
-    max-width: 23rem; 
-    border-radius: 0.5rem;   
-}
-
-label{
-    color: aliceblue;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.main__formularioNewsletter{
-    font-family: Arial, Helvetica, sans-serif;
-    color: aliceblue;
-}
-
-.main__boton{
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    align-items: center; 
-}
-
-.main__enviar{
-    width: 18rem;
-    font-size: medium;
-    background-color: rgb(217, 238, 247);
-    margin: 10px;
-    border-radius: 7rem;
-}
-.main__enviar:hover{
-    transform: scale(1.2);
-    background-color: green ;
-}
-
-.main__limpiar{
-    width: 18rem;
-    font-size: medium;
-    background-color: rgb(217, 238, 247);
-    margin: 10px;
-    border-radius: 7rem;
-}
-.main__limpiar:hover{
-    transform: scale(1.2);
-    background-color: red;
+    border-radius: 20px;  
+    .main__formularioNombre{
+        width: 23rem;
+        margin: 1rem;
+        height: 5vh;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: white;
+        border: none;
+        text-align: center;
+        border-radius: 0.5rem;
+    }
+    .main__formularioMail{
+        width: 23rem;
+        margin: 1rem;
+        height:5vh;
+        border: none;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: white;
+        text-align: center;
+        border-radius: 0.5rem;
+    }
+    .main__formularioTelefono{
+        width: 23rem;
+        margin: 1rem;
+        height: 5vh;
+        border:none;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: white;
+        text-align: center;
+        border-radius: 0.5rem;
+    }
+    .main__formularioComentario{
+        width:24rem;
+        background-color: white;
+        text-align: center;
+        border:none;
+        margin:1rem;
+        min-height: 100px;  
+        max-height: 200px;
+        max-width: 23rem; 
+        border-radius: 0.5rem;   
+    }
+    label{
+        color: rgb(240, 255, 242);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .main__formularioNewsletter{
+        font-family: Arial, Helvetica, sans-serif;
+        color: aliceblue;
+    }
+    .main__boton{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center; 
+    }
+    .main__enviar{
+        width: 18rem;
+        font-size: medium;
+        background-color: $color-btn-consulta;
+        margin: 10px;
+        border-radius: 7rem;
+    }
+    .main__enviar:hover{
+        transform: scale(1.2);
+        background-color: $color-enviar-hover;
+    }
+    .main__limpiar{
+        width: 18rem;
+        font-size: medium;
+        background-color: $color-btn-consulta;
+        margin: 10px;
+        border-radius: 7rem;
+    }
+    .main__limpiar:hover{
+        transform: scale(1.2);
+        background-color: $color-limpiar-hover;
+    }
 }
 
 .titulo__producto{
@@ -328,12 +301,11 @@ label{
     margin: 1rem;
     border-radius: 1.5rem;
     padding: 1rem;
-}
-
-.envios__titulo{
-    display: flex;
-    flex-direction: row-reverse;   
-    margin-bottom: 4rem;
+    &__titulo{
+        display: flex;
+        flex-direction: row-reverse;   
+        margin-bottom: 4rem;
+    }
 }
 
 .grid__historia{
@@ -355,16 +327,16 @@ label{
     "textotres textotres textotres"
     "imagendos imagentres imagencuatro";
     text-align:center;    
+    .img__ferreteria{
+        grid-area: imagen;
+        border-radius: 2rem;
+    }
+    .grid__historiauno{
+        grid-area: textouno;
+    }
 }
 
-.img__ferreteria{
-    grid-area: imagen;
-    border-radius: 2rem;
-}
 
-.grid__historiauno{
-    grid-area: textouno;
-}
 
 .grid__historiados{
     grid-area: textodos;
