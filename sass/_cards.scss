@@ -1,0 +1,11 @@
+.card{
+    border-radius: 2rem;
+    &-img-top{
+        border-radius: 2rem;
+    }
+    &-body{
+        background-color: $color-cards;
+        border-radius: 2rem;
+    
+    }
+}
