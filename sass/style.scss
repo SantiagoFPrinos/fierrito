@@ -11,29 +11,6 @@
 body{background-color: $color-principal;
 }
 
-.bg-gris{
-    background-color: $color-navegacion;
-}
-
-.nav-link{
-    color: $color-letras-nav
-}
-
-.navbar-toggler{
-    border-color: $color-letras-nav;
-}
-.navbar-toggler-icon{
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-
-li{ font-family: $font-navegacion;
-    padding: 0.7rem;
-    a{ text-decoration: none;
-        color: $color-titulo-principal
-        }
-}
-
-/* main */
 .portada{
     margin: 30px;
     display: flex;
@@ -88,13 +65,6 @@ li{ font-family: $font-navegacion;
     }
 }
 
-.btn:hover{
-    transform: scale(1.2);
-    transition: all 3s;
-    background-color: $color-btn;
-    cursor: pointer;
-}
-
 .card{
     border-radius: 2rem;
     &-img-top{
@@ -137,19 +107,6 @@ li{ font-family: $font-navegacion;
         margin: 1rem;
     }
 }
-
-.footer__disclaimer{
-    text-align: center;
-    font-family: $font-footer;
-    &__redes{
-            text-align: center;
-    }
-    &__logos{
-            text-align: right;
-        }
-}
-
-
 
 .imagenFondo{
     background-image: url(../recursos/flag-of-argentina.png);
@@ -253,32 +210,6 @@ li{ font-family: $font-navegacion;
         background-color: $color-limpiar-hover;
     }
 }
-@media (min-width: 320px) and (max-width: 540px){
-    .formulario{
-        width:80vw;
-        .main__formularioNombre{
-            width: 80vw;
-        }
-        .main__formularioMail{
-            width: 80vw;
-        }
-        .main__formularioTelefono{
-            width: 80vw;
-        }
-        .main__formularioComentario{
-            width: 80vw;
-        }
-        .main__enviar{
-            width: 50vw;
-        }
-        .main__limpiar{
-            width: 50vw;
-        }
-    }
-}
-
-
-
 
 .envios{
     background: rgb(126,160,180);
@@ -324,32 +255,34 @@ li{ font-family: $font-navegacion;
 
 .img__ferreteria{
     grid-area: imagen;
+    border-radius: 2rem;
+    width: 20vw;
 }
 
 .grid__historiauno{
     grid-area: textouno;
-
 }
 
 .grid__historiados{
     grid-area: textodos;
-
 }
 
 .grid__historiatres{
     grid-area: textotres;
-
 }
 
 .gridhistoria__imagenesDos{
     grid-area: imagendos;
-    
+    border-radius: 2rem;    
 }
+
 .grid__cinco{
-    width: 20vw;
+    width: 20vw;    
 }
+
 .gridhistoria__imagenesTres{
     grid-template-columns: imagentres;
+    border-radius: 2rem;
 }
 
 .grid__seis{
@@ -358,42 +291,11 @@ li{ font-family: $font-navegacion;
 
 .gridhistoria__imagenesCuatro{
     grid-area: imagencuatro;
+    border-radius: 2rem;
 }
 .grid__siete{
     width: 20vw;
 }
-
-.img__ferreteria{
-    width: 20vw;
-}
-
-@media (min-width: 320px) and (max-width: 540px) {
-    /*cambios estructurales*/
-.grid__historia{ 
-    grid-template-columns:  1fr;
-    grid-template-areas: 
-    "imagen" 
-    "textouno" 
-    "textodos"
-    "textotres" 
-    "textotres" 
-    "textotres"
-    "imagendos"
-    "imagentres"
-    "imagencuatro";
-    background-color: darkorange;
-}}
-@media (min-width: 541px) and (max-width: 720px) {
-    /*cambios estructurales*/
-    .grid__historia { 
-    grid-template-columns:  1fr 1fr;
-    grid-template-areas: 
-    "imagen textouno" 
-    "textodos textotres"
-    "imagendos imagentres"
-    "imagencuatro imagencuatro" ;
-    background-color: chartreuse;
-}}
 
 .titulo__producto{
     text-align: center;
@@ -401,7 +303,8 @@ li{ font-family: $font-navegacion;
     padding: 1rem;   
 }
 
-.producto{display: grid;
+.producto{
+    display: grid;
     justify-items: center;
     background: rgb(126,160,180);
     background: -moz-linear-gradient(90deg, rgba(126,160,180,1) 0%, rgba(244,244,244,1) 49%);
@@ -419,8 +322,11 @@ li{ font-family: $font-navegacion;
 .definicionProducto{
     text-align:justify  ;
 }  
-.botonProducto{
+.boton__Producto{
     margin-left: 3rem;
-}
+    border-radius: 1rem;
+    width: 10vw;
+} 
 
+@import 'mediaqueries';
 

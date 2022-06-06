@@ -56,50 +56,42 @@ h3 {
   color: #5900ff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 
-.header__navegacion {
-  padding: 0.3rem;
-  border-radius: 10px;
-  flex-grow: 1; }
-
-.header__referencias {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end; }
-
-li {
-  font-family: 'Oswald', sans-serif;
-  padding: 20px; }
-
 a {
   text-decoration: none;
   color: black; }
 
+.nav-link {
+  color: white; }
+
+.navbar-toggler {
+  border-color: white; }
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
+
+.bg-gris {
+  background-color: #be97ac; }
+
+li {
+  font-family: "Oswald", sans-serif;
+  padding: 0.7rem; }
+  li a {
+    text-decoration: none;
+    color: black; }
+
+li {
+  display: inline; }
+
 .footer__disclaimer {
   text-align: center;
-  font-family: 'Oswald', sans-serif; }
+  font-family: "roboto", "oswald", sans-serif; }
 
 .footer__redes {
-  font-family: 'Oswald', sans-serif;
   text-align: center; }
 
 .footer__logos {
   text-align: right; }
 
-li {
-  display: inline; }
-
-/* .boton{
-    display: flex;
-    flex-direction:column; 
-    align-items: center;
-    color: rgb(27, 23, 23);
-    background-color: rgb(190, 162, 216);    
-    border-radius: 1rem;
-    width: 100%;    
-    border-bottom: 5rem;
-    padding: 0.8rem;
-    font-size: medium;
-} */
 .btn:hover {
   transform: scale(1.2);
   transition: all 3s;
@@ -107,43 +99,6 @@ li {
   cursor: pointer; }
 
 @media (min-width: 320px) and (max-width: 540px) {
-  /*cambios estructurales*/
-  .grid__historia {
-    grid-template-columns: 1fr;
-    grid-template-areas: "imagen"  "textouno"  "textodos" "textotres"  "textotres"  "textotres" "imagendos" "imagentres" "imagencuatro";
-    background-color: darkorange; }
-  .producto {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr; }
-  .envios {
-    width: 85vw;
-    margin: 0.5rem; }
-  .miniflete {
-    width: 10vw;
-    height: 10vh; }
-  .img__venta {
-    width: 30vw;
-    height: 30vh; }
-  .herramientas__productos {
-    width: 70vw;
-    height: 55vh; }
-  iframe {
-    width: 40vw;
-    height: 30vh; } }
-
-@media (min-width: 541px) and (max-width: 720px) {
-  /*cambios estructurales*/
-  .grid__historia {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "imagen textouno"  "textodos textotres" "imagendos imagentres" "imagencuatro imagencuatro";
-    background-color: chartreuse; }
-  .producto {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr); }
-  .envios {
-    width: 90vw; } }
-
-@media (min-width: 541px) and (max-width: 720px) and (min-width: 320px) and (max-width: 540px) {
   .formulario {
     width: 80vw; }
     .formulario .main__formularioNombre {
@@ -157,18 +112,48 @@ li {
     .formulario .main__enviar {
       width: 50vw; }
     .formulario .main__limpiar {
-      width: 50vw; } }
+      width: 50vw; }
+  .grid__historia {
+    grid-template-columns: 1fr;
+    grid-template-areas: "imagen"  "textouno"  "textodos" "textotres"  "textotres"  "textotres" "imagendos" "imagentres" "imagencuatro"; }
+  .grid__seis {
+    display: none; }
+  .grid__siete {
+    display: none; }
+  iframe {
+    width: 30vw;
+    height: 20vh; }
+  .definicion__Producto {
+    display: none; }
+  .row {
+    margin: auto; }
+  .img-fluid {
+    display: none; }
+  .row {
+    flex-direction: column;
+    justify-content: center; }
+  h2 {
+    text-align: center; }
+  .boton__Producto {
+    width: 25vw;
+    margin-left: 1rem; } }
 
 @media (min-width: 541px) and (max-width: 720px) {
-  .img__venta {
-    width: 20vw;
-    height: 20vh; }
-  .herramientas__productos {
-    width: 60vw;
-    height: 60vh; }
+  /*cambios estructurales*/
+  .grid__historia {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "imagen textouno"  "textodos textotres" "imagendos imagentres" "imagencuatro imagencuatro"; }
+  .grid__siete {
+    display: none; }
   iframe {
     width: 40vw;
-    height: 40vh; } }
+    height: 30vh; }
+  .herramientas {
+    justify-content: center; }
+  .definicion__Producto {
+    display: none; }
+  .boton__Producto {
+    text-align: left; } }
 
 * {
   margin: 0px;
@@ -177,26 +162,6 @@ li {
 body {
   background-color: darkgrey; }
 
-.bg-gris {
-  background-color: #be97ac; }
-
-.nav-link {
-  color: white; }
-
-.navbar-toggler {
-  border-color: white; }
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
-
-li {
-  font-family: "Oswald", sans-serif;
-  padding: 0.7rem; }
-  li a {
-    text-decoration: none;
-    color: black; }
-
-/* main */
 .portada {
   margin: 30px;
   display: flex;
@@ -244,12 +209,6 @@ li {
     border: 4px ridge black;
     border-radius: 1rem; }
 
-.btn:hover {
-  transform: scale(1.2);
-  transition: all 3s;
-  background-color: #fcec16;
-  cursor: pointer; }
-
 .card {
   border-radius: 2rem; }
   .card-img-top {
@@ -284,14 +243,6 @@ li {
   .ayuda iframe {
     border-radius: 2rem;
     margin: 1rem; }
-
-.footer__disclaimer {
-  text-align: center;
-  font-family: "roboto", "oswald", sans-serif; }
-  .footer__disclaimer__redes {
-    text-align: center; }
-  .footer__disclaimer__logos {
-    text-align: right; }
 
 .imagenFondo {
   background-image: url(../recursos/flag-of-argentina.png);
@@ -382,22 +333,6 @@ li {
     transform: scale(1.2);
     background-color: red; }
 
-@media (min-width: 320px) and (max-width: 540px) {
-  .formulario {
-    width: 80vw; }
-    .formulario .main__formularioNombre {
-      width: 80vw; }
-    .formulario .main__formularioMail {
-      width: 80vw; }
-    .formulario .main__formularioTelefono {
-      width: 80vw; }
-    .formulario .main__formularioComentario {
-      width: 80vw; }
-    .formulario .main__enviar {
-      width: 50vw; }
-    .formulario .main__limpiar {
-      width: 50vw; } }
-
 .envios {
   background: #7ea0b4;
   background: -moz-linear-gradient(90deg, #7ea0b4 0%, #f4f4f4 49%);
@@ -435,7 +370,9 @@ li {
   text-align: center; }
 
 .img__ferreteria {
-  grid-area: imagen; }
+  grid-area: imagen;
+  border-radius: 2rem;
+  width: 20vw; }
 
 .grid__historiauno {
   grid-area: textouno; }
@@ -447,39 +384,25 @@ li {
   grid-area: textotres; }
 
 .gridhistoria__imagenesDos {
-  grid-area: imagendos; }
+  grid-area: imagendos;
+  border-radius: 2rem; }
 
 .grid__cinco {
   width: 20vw; }
 
 .gridhistoria__imagenesTres {
-  grid-template-columns: imagentres; }
+  grid-template-columns: imagentres;
+  border-radius: 2rem; }
 
 .grid__seis {
   width: 20vw; }
 
 .gridhistoria__imagenesCuatro {
-  grid-area: imagencuatro; }
+  grid-area: imagencuatro;
+  border-radius: 2rem; }
 
 .grid__siete {
   width: 20vw; }
-
-.img__ferreteria {
-  width: 20vw; }
-
-@media (min-width: 320px) and (max-width: 540px) {
-  /*cambios estructurales*/
-  .grid__historia {
-    grid-template-columns: 1fr;
-    grid-template-areas: "imagen"  "textouno"  "textodos" "textotres"  "textotres"  "textotres" "imagendos" "imagentres" "imagencuatro";
-    background-color: darkorange; } }
-
-@media (min-width: 541px) and (max-width: 720px) {
-  /*cambios estructurales*/
-  .grid__historia {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "imagen textouno"  "textodos textotres" "imagendos imagentres" "imagencuatro imagencuatro";
-    background-color: chartreuse; } }
 
 .titulo__producto {
   text-align: center;
@@ -503,5 +426,64 @@ li {
 .definicionProducto {
   text-align: justify; }
 
-.botonProducto {
-  margin-left: 3rem; }
+.boton__Producto {
+  margin-left: 3rem;
+  border-radius: 1rem;
+  width: 10vw; }
+
+@media (min-width: 320px) and (max-width: 540px) {
+  .formulario {
+    width: 80vw; }
+    .formulario .main__formularioNombre {
+      width: 80vw; }
+    .formulario .main__formularioMail {
+      width: 80vw; }
+    .formulario .main__formularioTelefono {
+      width: 80vw; }
+    .formulario .main__formularioComentario {
+      width: 80vw; }
+    .formulario .main__enviar {
+      width: 50vw; }
+    .formulario .main__limpiar {
+      width: 50vw; }
+  .grid__historia {
+    grid-template-columns: 1fr;
+    grid-template-areas: "imagen"  "textouno"  "textodos" "textotres"  "textotres"  "textotres" "imagendos" "imagentres" "imagencuatro"; }
+  .grid__seis {
+    display: none; }
+  .grid__siete {
+    display: none; }
+  iframe {
+    width: 30vw;
+    height: 20vh; }
+  .definicion__Producto {
+    display: none; }
+  .row {
+    margin: auto; }
+  .img-fluid {
+    display: none; }
+  .row {
+    flex-direction: column;
+    justify-content: center; }
+  h2 {
+    text-align: center; }
+  .boton__Producto {
+    width: 25vw;
+    margin-left: 1rem; } }
+
+@media (min-width: 541px) and (max-width: 720px) {
+  /*cambios estructurales*/
+  .grid__historia {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "imagen textouno"  "textodos textotres" "imagendos imagentres" "imagencuatro imagencuatro"; }
+  .grid__siete {
+    display: none; }
+  iframe {
+    width: 40vw;
+    height: 30vh; }
+  .herramientas {
+    justify-content: center; }
+  .definicion__Producto {
+    display: none; }
+  .boton__Producto {
+    text-align: left; } }
