@@ -1,5 +1,5 @@
 @import 'variables';
-@import 'sasscript';
+@import 'helpers';
 @import 'header';
 @import 'footer';
 @import 'boton';
@@ -109,7 +109,7 @@ body{background-color: $color-principal;
 }
 
 .imagenFondo{
-    background-image: url(../recursos/flag-of-argentina.png);
+    background-image: url(../recursos/flag-of-argentina.jpg);
     background-size: 100vw 100vh;
     background-attachment: fixed;
     .main__titulo{
@@ -131,7 +131,7 @@ body{background-color: $color-principal;
     margin:auto;
     padding: 1rem;
     width:25rem;
-    border-radius: 20px;  
+    border-radius: 20px;
     .main__formularioNombre{
         width: 23rem;
         margin: 1rem;
@@ -212,7 +212,7 @@ body{background-color: $color-principal;
 }
 
 .envios{
-    background: rgb(126,160,180);
+    background: $color-envios;
     background: -moz-linear-gradient(90deg, rgba(126,160,180,1) 0%, rgba(244,244,244,1) 49%);
     background: -webkit-linear-gradient(90deg, rgba(126,160,180,1) 0%, rgba(244,244,244,1) 49%);
     background: linear-gradient(90deg, rgba(126,160,180,1) 0%, rgba(244,244,244,1) 49%);
@@ -303,18 +303,6 @@ body{background-color: $color-principal;
     padding: 1rem;   
 }
 
-.producto{
-    display: grid;
-    justify-items: center;
-    background: rgb(126,160,180);
-    background: -moz-linear-gradient(90deg, rgba(126,160,180,1) 0%, rgba(244,244,244,1) 49%);
-    background: -webkit-linear-gradient(90deg, rgba(126,160,180,1) 0%, rgba(244,244,244,1) 49%);
-    background: linear-gradient(90deg, rgba(126,160,180,1) 0%, rgba(244,244,244,1) 49%);
-    border-radius: 2rem;
-    transform: scale(1.2);
-    cursor:pointer;
-}  
-    
 .img-fluid{
     border-radius: 2rem;  
     

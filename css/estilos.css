@@ -126,23 +126,23 @@ li {
   .definicion__Producto {
     display: none; }
   .row {
-    margin: auto; }
-  .img-fluid {
-    display: none; }
-  .row {
+    margin: auto;
     flex-direction: column;
     justify-content: center; }
   h2 {
     text-align: center; }
   .boton__Producto {
     width: 25vw;
-    margin-left: 1rem; } }
+    margin-left: 1rem;
+    margin-bottom: 1rem; }
+  .container {
+    text-align: center; } }
 
 @media (min-width: 541px) and (max-width: 720px) {
   /*cambios estructurales*/
   .grid__historia {
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "imagen textouno"  "textodos textotres" "imagendos imagentres" "imagencuatro imagencuatro"; }
+    grid-template-areas: "textouno imagen"  "textodos textotres" "imagendos imagentres" "imagencuatro imagencuatro"; }
   .grid__siete {
     display: none; }
   iframe {
@@ -150,10 +150,12 @@ li {
     height: 30vh; }
   .herramientas {
     justify-content: center; }
-  .definicion__Producto {
-    display: none; }
   .boton__Producto {
-    text-align: left; } }
+    text-align: center;
+    width: 6rem;
+    margin-bottom: 2rem; }
+  .container {
+    text-align: center; } }
 
 * {
   margin: 0px;
@@ -245,7 +247,7 @@ body {
     margin: 1rem; }
 
 .imagenFondo {
-  background-image: url(../recursos/flag-of-argentina.png);
+  background-image: url(../recursos/flag-of-argentina.jpg);
   background-size: 100vw 100vh;
   background-attachment: fixed; }
   .imagenFondo .main__titulo {
@@ -409,17 +411,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   padding: 1rem; }
 
-.producto {
-  display: grid;
-  justify-items: center;
-  background: #7ea0b4;
-  background: -moz-linear-gradient(90deg, #7ea0b4 0%, #f4f4f4 49%);
-  background: -webkit-linear-gradient(90deg, #7ea0b4 0%, #f4f4f4 49%);
-  background: linear-gradient(90deg, #7ea0b4 0%, #f4f4f4 49%);
-  border-radius: 2rem;
-  transform: scale(1.2);
-  cursor: pointer; }
-
 .img-fluid {
   border-radius: 2rem; }
 
@@ -459,23 +450,23 @@ body {
   .definicion__Producto {
     display: none; }
   .row {
-    margin: auto; }
-  .img-fluid {
-    display: none; }
-  .row {
+    margin: auto;
     flex-direction: column;
     justify-content: center; }
   h2 {
     text-align: center; }
   .boton__Producto {
     width: 25vw;
-    margin-left: 1rem; } }
+    margin-left: 1rem;
+    margin-bottom: 1rem; }
+  .container {
+    text-align: center; } }
 
 @media (min-width: 541px) and (max-width: 720px) {
   /*cambios estructurales*/
   .grid__historia {
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "imagen textouno"  "textodos textotres" "imagendos imagentres" "imagencuatro imagencuatro"; }
+    grid-template-areas: "textouno imagen"  "textodos textotres" "imagendos imagentres" "imagencuatro imagencuatro"; }
   .grid__siete {
     display: none; }
   iframe {
@@ -483,7 +474,9 @@ body {
     height: 30vh; }
   .herramientas {
     justify-content: center; }
-  .definicion__Producto {
-    display: none; }
   .boton__Producto {
-    text-align: left; } }
+    text-align: center;
+    width: 6rem;
+    margin-bottom: 2rem; }
+  .container {
+    text-align: center; } }
